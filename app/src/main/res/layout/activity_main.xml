@@ -8,9 +8,175 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frag_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        app:navGraph="@navigation/home_navigation"/>
+        app:navGraph="@navigation/home_navigation" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:text="HOME"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/frag_host"
+            app:layout_constraintTop_toTopOf="@+id/frag_host"
+
+            tools:ignore="MissingConstraints,NotSibling" />
+
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="4">
+
+            <!-- Expense Entry Section -->
+            <LinearLayout
+                android:id="@+id/expense_entry_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/expense_entry_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_expense_entry"
+                    android:contentDescription="expense_entry_icon"/>
+
+                <TextView
+                    android:id="@+id/expense_entry_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense Entry"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Expense Categories Section -->
+            <LinearLayout
+                android:id="@+id/expense_categories_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/expense_categories_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_expense_categories"
+                    android:contentDescription="expense_categories_icon"/>
+
+                <TextView
+                    android:id="@+id/expense_categories_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense Categories"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Income Tracking Section -->
+            <LinearLayout
+                android:id="@+id/income_tracking_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/income_tracking_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_income_tracking"
+                    android:contentDescription="income_tracking_icon"/>
+
+                <TextView
+                    android:id="@+id/income_tracking_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Income Tracking"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Budgeting Section -->
+            <LinearLayout
+                android:id="@+id/budgeting_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/budgeting_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_budgeting"
+                    android:contentDescription="budgeting_icon"/>
+
+                <TextView
+                    android:id="@+id/budgeting_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budgeting"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Visualization Section -->
+            <LinearLayout
+                android:id="@+id/Visualization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Visualization_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_visualization"
+                    android:contentDescription="Visualization_icon"/>
+
+                <TextView
+                    android:id="@+id/Visualization_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visualization"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </GridLayout>
+
+    </RelativeLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

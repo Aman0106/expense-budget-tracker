@@ -10,4 +10,5 @@
         android:name="com.example.expense_budget_tracker.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
 </navigation>
