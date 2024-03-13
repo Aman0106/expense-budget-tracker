@@ -1,4 +1,4 @@
-package com.example.expense_budget_tracker.activities
+package com.example.expense_budget_tracker.presentation.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

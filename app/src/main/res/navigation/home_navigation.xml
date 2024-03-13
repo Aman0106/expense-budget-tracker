@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.expense_budget_tracker.fragments.HomeFragment"
+        android:name="com.example.expense_budget_tracker.presentation.activities.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 

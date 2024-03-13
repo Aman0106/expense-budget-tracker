@@ -1,4 +1,4 @@
-package com.example.expense_budget_tracker.fragments
+package com.example.expense_budget_tracker.presentation.activities.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
